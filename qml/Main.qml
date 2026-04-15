@@ -2,6 +2,7 @@ import QtQuick
 import QtQuick.Controls
 import QtQuick.Layouts
 import QtQuick.Dialogs
+import QtCore
 import Qt5Compat.GraphicalEffects
 import "components"
 
@@ -403,7 +404,10 @@ ApplicationWindow {
         id: importDialog
         title: "Import skill tree"
         fileMode: FileDialog.OpenFile
-        nameFilters: ["JSON (*.json)"]
+        options: FileDialog.DontUseNativeDialog
+        currentFolder: "file://" + StandardPaths.writableLocation(StandardPaths.DocumentsLocation)
+        nameFilters: ["JSON files (*.json)", "All files (*)"]
+        selectedNameFilter.index: 1
         onAccepted: skillTreeVM.importTree(selectedFile)
     }
 
