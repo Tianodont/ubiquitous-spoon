@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/">
+        <file>icons/default_skill.svg</file>
+        <file alias="Main.qml">../qml/Main.qml</file>
+        <file alias="components/SkillNodeItem.qml">../qml/components/SkillNodeItem.qml</file>
+        <file alias="components/SkillTreeCanvas.qml">../qml/components/SkillTreeCanvas.qml</file>
+        <file alias="components/SkillDetailView.qml">../qml/components/SkillDetailView.qml</file>
+        <file alias="components/SkillEditorView.qml">../qml/components/SkillEditorView.qml</file>
+        <file alias="components/FlatButton.qml">../qml/components/FlatButton.qml</file>
+    </qresource>
+</RCC>
